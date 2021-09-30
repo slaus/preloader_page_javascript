@@ -1,0 +1,53 @@
+.loaded_hiding .sp-preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+.loaded .sp-preloader {
+    display: none;
+}
+.sp-preloader {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+.sp-preloader>div {
+    background: #1bbc9b;
+}
+.sp-preloader{
+  height:100%;
+  left:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:99999
+}
+.sp-preloader>div{
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  top:50%;
+  left:50%;
+  margin-top:-25px;
+  margin-left:-25px;
+  position:absolute;
+  animation:spSpin .75s linear infinite
+}
+.sp-preloader>div:after{
+  content:'';
+  position:absolute;
+  width:49px;
+  height:49px;
+  top:1px;
+  right:0;
+  left:0;
+  margin:auto;
+  border-radius:50%
+}
+@keyframes spSpin{
+  to{
+    transform:rotate(360deg)
+  }
+}
